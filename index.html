@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>AIDot - 首页</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    header { background: #f5f5f5; padding: 12px 20px; border-radius: 6px; }
+    main { margin-top: 16px; }
+    .images { display: flex; gap: 8px; align-items: center; }
+    .images img { max-height: 80px; display:block; }
+  </style>
 </head>
 <body>
   <header>
@@ -11,9 +18,14 @@
   </header>
   <main>
     <p>欢迎来到 AIDot。</p>
-    <p>这是一个基础的 index 页面，静态资源位于 images/ 和 js/ 目录。</p>
-    <img src="images/example.png" alt="示例图片" style="max-width:300px;"/>
+    <p>下面是放在 images/ 目录的三张动图（占位文件）。</p>
+    <div class="images">
+      <img src="images/1.gif" alt="image 1" />
+      <img src="images/2.gif" alt="image 2" />
+      <img src="images/3.gif" alt="image 3" />
+    </div>
   </main>
-  <script src="js/main.js" defer></script>
+  <script src="js/test1_3.js" defer></script>
+  <script src="js/test2_1.js" defer></script>
 </body>
 </html>
